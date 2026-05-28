@@ -7,12 +7,14 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+    html, body {
+      height: auto;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
       background: #fafaf8;
       color: #1a1a1a;
-      display: inline-flex;
-      justify-content: center;
       padding: 2rem;
     }
 
@@ -23,6 +25,7 @@
       padding: 2rem 2.25rem 1.75rem;
       max-width: 660px;
       width: 100%;
+      margin: 0 auto;
     }
 
     .table-eyebrow {
@@ -231,5 +234,15 @@
     </p>
     <p class="credit-line">Graphic: Andrew Thompson/News24</p>
   </div>
+  <script>
+    function sendHeight() {
+      var h = document.body.offsetHeight;
+      window.parent.postMessage({ iframeHeight: Math.ceil(h) }, '*');
+    }
+    window.addEventListener('load', function() {
+      sendHeight();
+      setTimeout(sendHeight, 200);
+    });
+  </script>
 </body>
 </html>
