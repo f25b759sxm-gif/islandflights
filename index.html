@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Island Escapes — Cheapest Direct Return Flights</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      background: #fafaf8;
+      color: #1a1a1a;
+      display: inline-flex;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #e8e6e0;
+      border-radius: 4px;
+      padding: 2rem 2.25rem 1.75rem;
+      max-width: 660px;
+      width: 100%;
+    }
+
+    .table-eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: #888780;
+      margin-bottom: 7px;
+    }
+
+    .table-headline {
+      font-size: 22px;
+      font-weight: 500;
+      color: #1a1a1a;
+      margin: 0 0 5px;
+      line-height: 1.25;
+    }
+
+    .table-subhead {
+      font-size: 14px;
+      color: #5f5e5a;
+      margin: 0 0 18px;
+    }
+
+    .divider-top {
+      border: none;
+      border-top: 2px solid #1a1a1a;
+      margin: 0;
+    }
+
+    .fare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin-top: 0;
+    }
+
+    .fare-table thead th {
+      padding: 10px 12px;
+      text-align: left;
+      font-weight: 500;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #888780;
+      border-bottom: 1px solid #d3d1c7;
+      background: transparent;
+    }
+
+    .fare-table thead th.num { text-align: center; }
+    .fare-table thead th.right { text-align: right; }
+
+    .fare-table tbody tr {
+      border-bottom: 1px solid #e8e6e0;
+      transition: background 0.1s;
+    }
+
+    .fare-table tbody tr:hover { background: #f5f4f0; }
+
+    .fare-table tbody td {
+      padding: 13px 12px;
+      vertical-align: middle;
+      color: #1a1a1a;
+    }
+
+    .rank-cell {
+      text-align: center;
+      font-size: 12px;
+      font-weight: 500;
+      color: #b4b2a9;
+    }
+
+    .dest-cell { font-weight: 500; font-size: 15px; }
+
+    .dest-sub {
+      font-size: 12px;
+      color: #888780;
+      font-weight: 400;
+      margin-top: 2px;
+    }
+
+    .fare-cell {
+      text-align: right;
+      font-weight: 500;
+      font-size: 15px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .airline-cell {
+      color: #5f5e5a;
+      font-size: 13px;
+    }
+
+    .top-row .dest-cell { font-size: 16px; }
+    .top-row .fare-cell { font-size: 16px; }
+    .top-row td { padding-top: 16px; }
+
+    .badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      padding: 2px 7px;
+      border-radius: 3px;
+      background: #e1f5ee;
+      color: #0f6e56;
+      margin-left: 7px;
+      vertical-align: middle;
+    }
+
+    .table-note {
+      font-size: 12px;
+      color: #888780;
+      margin-top: 16px;
+      line-height: 1.65;
+      border-top: 1px solid #e8e6e0;
+      padding-top: 13px;
+    }
+
+    .credit-line {
+      font-size: 11px;
+      color: #b4b2a9;
+      margin-top: 10px;
+      text-align: right;
+      letter-spacing: 0.02em;
+    }
+
+    @media (max-width: 500px) {
+      .card { padding: 1.25rem 1rem 1.25rem; }
+      .fare-table thead th, .fare-table tbody td { padding: 10px 8px; }
+      .dest-sub { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <p class="table-eyebrow">&#9992;&#xFE0E;&nbsp; Island Escapes</p>
+    <h1 class="table-headline">Cheapest direct return flights from South Africa</h1>
+    <p class="table-subhead">Fares found for a seven-night July trip, direct economy return.</p>
+
+    <hr class="divider-top">
+
+    <table class="fare-table">
+      <thead>
+        <tr>
+          <th class="num" style="width:44px;">#</th>
+          <th>Destination</th>
+          <th class="right" style="width:160px;">Return fare</th>
+          <th style="width:140px;">Airline</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="top-row">
+          <td class="rank-cell">1</td>
+          <td class="dest-cell">
+            Seychelles <span class="badge">Cheapest</span>
+          </td>
+          <td class="fare-cell">R8&thinsp;318</td>
+          <td class="airline-cell">Air Seychelles</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">2</td>
+          <td class="dest-cell">
+            Mauritius
+          </td>
+          <td class="fare-cell">R9&thinsp;350</td>
+          <td class="airline-cell">FlySafair</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">3</td>
+          <td class="dest-cell">
+            Réunion
+          </td>
+          <td class="fare-cell">R10&thinsp;356</td>
+          <td class="airline-cell">Air Austral</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">4</td>
+          <td class="dest-cell">
+            Zanzibar
+          </td>
+          <td class="fare-cell">R10&thinsp;611</td>
+          <td class="airline-cell">FlySafair</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">5</td>
+          <td class="dest-cell">
+            Nosy Be
+          </td>
+          <td class="fare-cell">R12&thinsp;803</td>
+          <td class="airline-cell">Airlink</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">6</td>
+          <td class="dest-cell">
+            St Helena
+          </td>
+          <td class="fare-cell">R17&thinsp;135</td>
+          <td class="airline-cell">Airlink</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="table-note">
+      <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#888780" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:-1px;margin-right:4px;flex-shrink:0;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="8"/><line x1="12" y1="12" x2="12" y2="16"/></svg>Fares shown are the cheapest direct return economy flights found, typically for a seven-night July trip, checked on airline websites at the time of writing. Where airlines did not fly daily, the closest available direct dates were used. Prices can change without notice.
+    </p>
+    <p class="credit-line">Graphic: Andrew Thompson/News24</p>
+  </div>
+</body>
+</html>
